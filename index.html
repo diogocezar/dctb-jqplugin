@@ -1,0 +1,13 @@
+<html>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/dctb-jqplugin.js"></script>
+	<div id="example1">teste</div>
+	<div id="example2"></div>
+	<script>
+	$(document).ready(function(){
+	    console.log($("#example1").dctb({action: '__is_empty'}));
+	    console.log($("#example2").dctb({action: '__is_empty'}));
+	    $("#example1").dctb({action: '__click', call_back: function(){ alert('oi')}});
+	});
+	</script>
+</html>
